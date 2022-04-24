@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Cities">
+
+    <TextView
+        android:id="@+id/tvSelectCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select City"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/llLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/llLeft"
+        android:layout_width="210dp"
+        android:layout_height="600dp"
+        android:background="#94FFFFFF"
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/ibMumbai"
+            android:layout_width="150dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="150dp"
+            android:src="@drawable/mumbai_"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tvMumbai"
+            android:text="Mumbai"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginLeft="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/ibBangalore"
+            android:layout_width="150dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="150dp"
+            android:src="@drawable/begalore"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tvBangalore"
+            android:text="Bangalore"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/ibKolkata"
+            android:layout_width="150dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="150dp"
+            android:src="@drawable/kolkata"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tvKolkata"
+            android:text="Kolkata"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRight"
+        android:layout_width="210dp"
+        android:layout_height="600dp"
+        android:background="#94FFFFFF"
+        android:layout_marginBottom="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/ibDelhi"
+            android:layout_width="150dp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="150dp"
+            android:src="@drawable/delhi"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tvDelhi"
+            android:text="Delhi"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginLeft="70sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/ibHydrabad"
+            android:layout_width="150dp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="150dp"
+            android:src="@drawable/hydrabaad"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tvHydrabad"
+            android:text="Hydrabad"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+
+        <ImageButton
+            android:id="@+id/ibChennai"
+            android:layout_width="150dp"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="10sp"
+            android:layout_height="150dp"
+            android:src="@drawable/chennai"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tvChennai"
+            android:text="Chennai"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
