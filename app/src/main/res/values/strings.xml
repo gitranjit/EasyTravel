@@ -3,4 +3,13 @@
     <string name="new_password">New Password</string>
     <string name="confirm_new_password">Confirm new Password</string>
     <string name="change_password">Change Password</string>
+    <string name="book_hotel">Book Hotel</string>
+    <string name="history">History</string>
+    <string name="book_travels">Book Travels</string>
+    <string name="tourist_map">Tourist Map</string>
+    <string name="city_name">City Name</string>
+
+
+
+    <string name="mumbai_history">The city is a modern metropolis whose history is now fast fading into obscurity. Although many may not know the story about the birth of this beautiful city, Mumbaikars are passionate about their rich past and heritage. The name Mumbai is an eponym, derived from the name of a local Goddess called Mumbadevi. The history of this beautiful city dates back to the formation of the seven islands, namely Colaba, Mazagaon, Mahim, Parel, Bombay Island, Worli and Old Womans Island. This group of islands infact formed a part of the kingdom of Ashoka, the famed Buddhist emperor of India. Following the death of the king, the ownership of these islands was passed on and they were later colonized by a number of different rulers. From the early 19th century, the city went under a massive reconstruction and also experienced a boost in the economy during the American Civil War. Apart from the reconstruction and the ownership, Mumbai (previously called Bombay) has also been witness to mass carnages during the Second World War and the Hindu-Muslim Riots. A series of refurbishments and battles later, the city was officially deemed as the capital of the state of Maharashtra. Scroll further for more on Mumbai and its heritage.</string>
 </resources>

@@ -15,14 +15,16 @@ class ForgotPassword : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
 
+        val resendOtp=findViewById<TextView>(R.id.tvResendOtp)
         val enterotp=findViewById<EditText>(R.id.etEnterOTP)
         val changepass=findViewById<Button>(R.id.btnChangePass)
         val enterotpbtn=findViewById<Button>(R.id.btnEnterOtp)
-        val otp= Random.nextInt(1000,9999)+1;
         val sendotpbtn =findViewById<Button>(R.id.btnOtp)
         sendotpbtn.setOnClickListener {
+            resendOtp.visibility=View.VISIBLE
             sendotpbtn.visibility=View.GONE
-            Toast.makeText(this,otp.toString(),Toast.LENGTH_LONG).show()
+            generateOTP()
+//            Toast.makeText(this,otp.toString(),Toast.LENGTH_LONG).show()
             enterotp.visibility=View.VISIBLE
             enterotpbtn.visibility=View.VISIBLE
 //            changepass.visibility=View.GONE
@@ -33,9 +35,10 @@ class ForgotPassword : AppCompatActivity() {
 //            val changepass=findViewById<Button>(R.id.btnChangePass)
 //            changepass.visibility=View.VISIBLE
 
+        }
 
-
-
+        resendOtp.setOnClickListener {
+            generateOTP()
         }
 
         enterotpbtn.setOnClickListener {
@@ -57,5 +60,10 @@ class ForgotPassword : AppCompatActivity() {
             Toast.makeText(this,"Password Changed",Toast.LENGTH_SHORT).show()
             startActivity(Intent(this,MainActivity::class.java))
         }
+    }
+
+    private fun generateOTP() {
+        val otp= Random.nextInt(1000,9999)+1;
+        Toast.makeText(this,otp.toString(),Toast.LENGTH_LONG).show()
     }
 }

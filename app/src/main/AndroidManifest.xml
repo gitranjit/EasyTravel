@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Login_Register">
         <activity
+            android:name=".History"
+            android:exported="false" />
+        <activity
+            android:name=".Facilities"
+            android:exported="false" />
+        <activity
             android:name=".Cities"
             android:exported="false" />
         <activity

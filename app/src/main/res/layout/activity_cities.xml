@@ -37,8 +37,10 @@
             android:layout_marginLeft="20sp"
             android:layout_marginTop="10sp"
             android:layout_height="150dp"
+            android:onClick="openFascilities"
             android:src="@drawable/mumbai_"
             android:scaleType="centerCrop"
+
             />
 
         <TextView
@@ -56,10 +58,12 @@
             android:id="@+id/ibBangalore"
             android:layout_width="150dp"
             android:layout_marginLeft="20sp"
+            android:onClick="openFascilities"
             android:layout_marginTop="10sp"
             android:layout_height="150dp"
             android:src="@drawable/begalore"
             android:scaleType="centerCrop"
+
             />
 
         <TextView
@@ -78,9 +82,11 @@
             android:layout_width="150dp"
             android:layout_marginLeft="20sp"
             android:layout_marginTop="10sp"
+            android:onClick="openFascilities"
             android:layout_height="150dp"
             android:src="@drawable/kolkata"
             android:scaleType="centerCrop"
+
             />
 
         <TextView
@@ -112,9 +118,11 @@
             android:layout_width="150dp"
             android:layout_marginLeft="40sp"
             android:layout_marginTop="10sp"
+            android:onClick="openFascilities"
             android:layout_height="150dp"
             android:src="@drawable/delhi"
             android:scaleType="centerCrop"
+
             />
 
         <TextView
@@ -133,9 +141,11 @@
             android:layout_width="150dp"
             android:layout_marginLeft="40sp"
             android:layout_marginTop="10sp"
+            android:onClick="openFascilities"
             android:layout_height="150dp"
             android:src="@drawable/hydrabaad"
             android:scaleType="centerCrop"
+
             />
 
         <TextView
@@ -154,9 +164,11 @@
             android:layout_width="150dp"
             android:layout_marginLeft="40sp"
             android:layout_marginTop="10sp"
+            android:onClick="openFascilities"
             android:layout_height="150dp"
             android:src="@drawable/chennai"
             android:scaleType="centerCrop"
+
             />
 
         <TextView
