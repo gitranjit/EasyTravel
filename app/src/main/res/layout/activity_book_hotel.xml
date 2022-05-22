@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".BookHotel">
+
+
+    <HorizontalScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnback"-->
+<!--                android:layout_width="30sp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_back_arrow"-->
+<!--                android:layout_gravity="center"/>-->
+
+            <ImageView
+                android:id="@+id/ivbed2"
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/bed2"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20sp"
+                android:paddingHorizontal="35dp"
+                />
+            <ImageView
+                android:id="@+id/ivbed1"
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/bed1"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20sp"
+                android:paddingHorizontal="35dp"
+                />
+            <ImageView
+                android:id="@+id/ivhotelscrolingimg"
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/hotel3"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20sp"
+                android:paddingHorizontal="35dp"
+                />
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/hotel4"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20sp"
+                android:paddingHorizontal="35dp"
+                />
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/hotel6"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20sp"
+                android:paddingHorizontal="35dp"
+                />
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/hotel8"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20sp"
+                android:paddingHorizontal="35dp"
+                />
+
+
+
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnforward"-->
+<!--                android:layout_width="30sp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:src="@drawable/ic_forward_arrow"-->
+<!--                android:layout_gravity="center"/>-->
+
+        </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Easy Travel Hotel"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="40sp"
+        android:background="#2F303B9F"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single Room"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Rooms : 30"
+            android:textColor="@color/white"
+            android:layout_marginTop="20sp"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Double Room"
+                android:textColor="@color/white"
+                android:layout_marginTop="20sp"
+                android:textStyle="italic"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available Rooms : 25"
+                android:textColor="@color/white"
+                android:layout_marginTop="20sp"
+                android:textStyle="italic"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+
+
+        <Button
+            android:id="@+id/btnBookNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#CC5454"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+
+            />
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

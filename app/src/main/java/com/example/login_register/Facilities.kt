@@ -13,6 +13,18 @@ class Facilities : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_facilities)
 
+        val bookbus=findViewById<Button>(R.id.btnbookBus)
+        bookbus.setOnClickListener {
+            startActivity(Intent(this,Travels::class.java))
+        }
+
+        val bookhotel=findViewById<Button>(R.id.btnHotel)
+
+        bookhotel.setOnClickListener {
+            val intent=Intent(this,BookHotel::class.java)
+            startActivity(intent)
+        }
+
         val cityImage=findViewById<ImageView>(R.id.ivCityImage)
         val city=findViewById<TextView>(R.id.etcityName)
         val cityName=intent.getStringExtra("City Name")

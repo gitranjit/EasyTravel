@@ -15,171 +15,338 @@
         android:textColor="@color/black"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/llLeft"
+        android:layout_marginTop="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/llLeft"
-        android:layout_width="210dp"
-        android:layout_height="600dp"
-        android:background="#94FFFFFF"
-        android:layout_marginBottom="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        >
 
-        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/llLeft"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginBottom="10sp"
+            android:background="#94FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <ImageButton
-            android:id="@+id/ibMumbai"
-            android:layout_width="150dp"
-            android:layout_marginLeft="20sp"
-            android:layout_marginTop="10sp"
-            android:layout_height="150dp"
-            android:onClick="openFascilities"
-            android:src="@drawable/mumbai_"
-            android:scaleType="centerCrop"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
 
-            />
+                <ImageButton
+                    android:id="@+id/ibMumbai"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:onClick="openFascilities"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mumbai_"
 
-        <TextView
-            android:id="@+id/tvMumbai"
-            android:text="Mumbai"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:layout_marginLeft="30sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"/>
-
-        <ImageButton
-            android:id="@+id/ibBangalore"
-            android:layout_width="150dp"
-            android:layout_marginLeft="20sp"
-            android:onClick="openFascilities"
-            android:layout_marginTop="10sp"
-            android:layout_height="150dp"
-            android:src="@drawable/begalore"
-            android:scaleType="centerCrop"
-
-            />
-
-        <TextView
-            android:id="@+id/tvBangalore"
-            android:text="Bangalore"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:layout_marginLeft="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"/>
-
-        <ImageButton
-            android:id="@+id/ibKolkata"
-            android:layout_width="150dp"
-            android:layout_marginLeft="20sp"
-            android:layout_marginTop="10sp"
-            android:onClick="openFascilities"
-            android:layout_height="150dp"
-            android:src="@drawable/kolkata"
-            android:scaleType="centerCrop"
-
-            />
-
-        <TextView
-            android:id="@+id/tvKolkata"
-            android:text="Kolkata"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:layout_marginLeft="30dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/llRight"
-        android:layout_width="210dp"
-        android:layout_height="600dp"
-        android:background="#94FFFFFF"
-        android:layout_marginBottom="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="vertical">
+                    />
 
 
-        <ImageButton
-            android:id="@+id/ibDelhi"
-            android:layout_width="150dp"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="10sp"
-            android:onClick="openFascilities"
-            android:layout_height="150dp"
-            android:src="@drawable/delhi"
-            android:scaleType="centerCrop"
 
-            />
+                <ImageButton
+                    android:id="@+id/ibBangalore"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10sp"
+                    android:onClick="openFascilities"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/begalore"
 
-        <TextView
-            android:id="@+id/tvDelhi"
-            android:text="Delhi"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:layout_marginLeft="70sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"/>
+                    />
 
-        <ImageButton
-            android:id="@+id/ibHydrabad"
-            android:layout_width="150dp"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="10sp"
-            android:onClick="openFascilities"
-            android:layout_height="150dp"
-            android:src="@drawable/hydrabaad"
-            android:scaleType="centerCrop"
 
-            />
 
-        <TextView
-            android:id="@+id/tvHydrabad"
-            android:text="Hydrabad"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:layout_marginLeft="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"/>
+            </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/ibChennai"
-            android:layout_width="150dp"
-            android:layout_marginLeft="40sp"
-            android:layout_marginTop="10sp"
-            android:onClick="openFascilities"
-            android:layout_height="150dp"
-            android:src="@drawable/chennai"
-            android:scaleType="centerCrop"
 
-            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvChennai"
-            android:text="Chennai"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="30sp"
-            android:layout_marginLeft="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="true"/>
-    </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvMumbai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35sp"
+                    android:clickable="true"
+                    android:text="Mumbai"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvBangalore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:clickable="true"
+                    android:text="Bangalore"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/ibKolkata"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:layout_marginLeft="20sp"-->
+<!--                android:layout_marginTop="10sp"-->
+<!--                android:onClick="openFascilities"-->
+<!--                android:scaleType="centerCrop"-->
+<!--                android:src="@drawable/kolkata"-->
+
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvKolkata"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:clickable="true"-->
+<!--                android:text="Kolkata"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="30sp"-->
+<!--                android:textStyle="bold" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/ibKolkata"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:onClick="openFascilities"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/kolkata"
+
+                    />
+
+
+
+                <ImageButton
+                    android:id="@+id/ibDelhi"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10sp"
+                    android:onClick="openFascilities"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/delhi"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/tvKolkata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40sp"
+                    android:clickable="true"
+                    android:text="Kolkata"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvDelhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:clickable="true"
+                    android:text="Delhi"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/ibChennai"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:onClick="openFascilities"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chennai"
+
+                    />
+
+
+
+                <ImageButton
+                    android:id="@+id/ibHydrabad"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="10sp"
+                    android:onClick="openFascilities"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/hydrabaad"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+
+
+                <TextView
+                    android:id="@+id/tvChennai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40sp"
+                    android:clickable="true"
+                    android:text="Chennai"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvHydrabad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:clickable="true"
+                    android:text="Hydrabad"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/llRight"-->
+<!--        android:layout_width="210dp"-->
+<!--        android:layout_height="600dp"-->
+<!--        android:background="#94FFFFFF"-->
+<!--        android:layout_marginBottom="10sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:orientation="vertical">-->
+
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ibDelhi"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_marginLeft="40sp"-->
+<!--            android:layout_marginTop="10sp"-->
+<!--            android:onClick="openFascilities"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@drawable/delhi"-->
+<!--            android:scaleType="centerCrop"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvDelhi"-->
+<!--            android:text="Delhi"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="30sp"-->
+<!--            android:layout_marginLeft="70sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:clickable="true"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ibHydrabad"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_marginLeft="40sp"-->
+<!--            android:layout_marginTop="10sp"-->
+<!--            android:onClick="openFascilities"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@drawable/hydrabaad"-->
+<!--            android:scaleType="centerCrop"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvHydrabad"-->
+<!--            android:text="Hydrabad"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="30sp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:clickable="true"/>-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/ibChennai"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_marginLeft="40sp"-->
+<!--            android:layout_marginTop="10sp"-->
+<!--            android:onClick="openFascilities"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:src="@drawable/chennai"-->
+<!--            android:scaleType="centerCrop"-->
+
+<!--            />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tvChennai"-->
+<!--            android:text="Chennai"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="30sp"-->
+<!--            android:layout_marginLeft="50dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:clickable="true"/>-->
+<!--    </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

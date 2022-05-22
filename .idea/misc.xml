@@ -5,13 +5,17 @@
       <map>
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_book_hotel.xml" value="0.1796875" />
+        <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_book_room.xml" value="0.1796875" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_cities.xml" value="0.1796875" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_facilities.xml" value="0.1796875" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_forgot_password.xml" value="0.1796875" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_history.xml" value="0.1796875" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_new_fascilities.xml" value="0.1796875" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_register.xml" value="0.1796875" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_splash.xml" value="0.1796875" />
+        <entry key="..\:/Users/varad/AndroidStudioProjects/Easy Travel/app/src/main/res/layout/activity_travels.xml" value="0.1796875" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Login_Register/app/src/main/res/drawable-anydpi/ic_eye.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Login_Register/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/varad/AndroidStudioProjects/Login_Register/app/src/main/res/layout/activity_cities.xml" value="0.1796875" />

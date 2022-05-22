@@ -55,6 +55,7 @@
             app:layout_constraintTop_toTopOf="parent" >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etgmailinLogin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="#00000000"
@@ -92,6 +93,7 @@
             app:layout_constraintTop_toTopOf="parent" >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etpassinLogin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="#00000000"

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Travels">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/black"
+        android:layout_marginTop="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="20sp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/black">
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:src="@drawable/travel_home" />
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:src="@drawable/travels1" />
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/travels2"
+                android:padding="10dp"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/travels3"
+                android:padding="10dp"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/travels4"
+                android:padding="10dp"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="250dp"
+                android:src="@drawable/travels5"
+                android:padding="10dp"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:background="#2F303B9F">
+
+        <TextView
+            android:layout_width="120sp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Travels"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="#7032C3B2"
+            android:layout_gravity="center"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="textAutoCorrect"
+            android:hint="Enter your City"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="30sp"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:inputType="textAutoCorrect"
+            android:hint="Enter Destination City"
+            android:textColorHint="@color/white"
+            android:layout_marginLeft="30sp"
+            />
+
+
+
+        <RadioGroup
+            android:id="@+id/rgTravels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp">
+
+            <RadioButton
+                android:id="@+id/rbtravelsAc"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="Ac "
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rbtravelsNonAc"
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="Non Ac "
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvacdisc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:text="*Additional 200Rs Charege will be for AC room"/>
+
+        <RadioGroup
+            android:id="@+id/rgTravelsSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/rbtravelsSleeping"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:text="Sleeping  (Rs :1500)"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+            <RadioButton
+                android:id="@+id/rbtravelsSitting"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:text="Sitting  (Rs :1000)"
+                android:textSize="20dp"
+                android:textColor="@color/white"/>
+
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvTravelsBill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="RS 00.0"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_marginTop="15sp"
+            android:backgroundTint="#E4C2185B"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnbookTravels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Now"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:layout_marginTop="25sp"
+            android:visibility="gone"
+            android:backgroundTint="#E4C2185B"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
