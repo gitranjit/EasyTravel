@@ -7,6 +7,7 @@ class User{
     var gmail=""
     var pass=""
 
+    constructor(){}
     constructor( first:String, last:String, no:String, mail:String, passw:String){
         this.firstname=first
         this.lastname=last

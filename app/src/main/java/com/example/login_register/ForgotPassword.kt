@@ -4,66 +4,56 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.auth.AuthResult
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import kotlin.random.Random
 
 class ForgotPassword : AppCompatActivity() {
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
 
-        val resendOtp=findViewById<TextView>(R.id.tvResendOtp)
-        val enterotp=findViewById<EditText>(R.id.etEnterOTP)
-        val changepass=findViewById<Button>(R.id.btnChangePass)
-        val enterotpbtn=findViewById<Button>(R.id.btnEnterOtp)
-        val sendotpbtn =findViewById<Button>(R.id.btnOtp)
-        sendotpbtn.setOnClickListener {
-            resendOtp.visibility=View.VISIBLE
-            sendotpbtn.visibility=View.GONE
-            generateOTP()
-//            Toast.makeText(this,otp.toString(),Toast.LENGTH_LONG).show()
-            enterotp.visibility=View.VISIBLE
-            enterotpbtn.visibility=View.VISIBLE
-//            changepass.visibility=View.GONE
-            val mail=findViewById<EditText>(R.id.etUsername)
-            mail.visibility=View.GONE
-            val entermail=findViewById<TextView>(R.id.tvEnterMail)
-            entermail.visibility=View.GONE
-//            val changepass=findViewById<Button>(R.id.btnChangePass)
-//            changepass.visibility=View.VISIBLE
 
+        val progressbar=findViewById<ProgressBar>(R.id.progressbar)
+        val submit=findViewById<Button>(R.id.btnSubmit)
+        submit.setOnClickListener {
+            progressbar.visibility= View.VISIBLE
+            submit.visibility=View.GONE
+            val mail=findViewById<EditText>(R.id.etEmailtoResetPass)
+            var email=mail.text.toString()
+            if(email.isEmpty()){
+                progressbar.visibility= View.GONE
+                submit.visibility=View.VISIBLE
+                mail.error="Enter e-mail address to receive mail"
+            }
+            else{
+                FirebaseAuth.getInstance().sendPasswordResetEmail(email)
+                    .addOnCompleteListener{task->
+                        if(task.isSuccessful){
+                            progressbar.visibility= View.GONE
+                            Toast.makeText(this,"Email sent successfully to reset password",Toast.LENGTH_SHORT).show()
+
+                            finish()
+                        }
+                        else{
+                            progressbar.visibility= View.GONE
+                            submit.visibility=View.VISIBLE
+                            Toast.makeText(this,task.exception!!.message.toString(),Toast.LENGTH_SHORT).show()
+                        }
+                    }
+            }
         }
 
-        resendOtp.setOnClickListener {
-            generateOTP()
-        }
 
-        enterotpbtn.setOnClickListener {
-//
-            enterotp.visibility=View.GONE
-            enterotpbtn.visibility=View.GONE
 
-            val confirmpass=findViewById<EditText>(R.id.etConfirmPassword)
-            confirmpass.visibility=View.VISIBLE
-            val newpass=findViewById<EditText>(R.id.etNewPassword)
-            newpass.visibility=View.VISIBLE
-            val changepass=findViewById<Button>(R.id.btnChangePass)
-            changepass.visibility=View.VISIBLE
-//            Toast.makeText(this,"Password Changed",Toast.LENGTH_SHORT).show()
-//            startActivity(Intent(this,MainActivity::class.java))
-        }
 
-        changepass.setOnClickListener {
-            Toast.makeText(this,"Password Changed",Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this,MainActivity::class.java))
-        }
     }
 
-    private fun generateOTP() {
-        val otp= Random.nextInt(1000,9999)+1;
-        Toast.makeText(this,otp.toString(),Toast.LENGTH_LONG).show()
-    }
+
 }
